@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-slider">
+        <div class="slider-image fade" style="background-image: url('https://www.livemint.com/lm-img/img/2024/11/08/600x338/TOPSHOT-US-POLITICS-ELECTION-BIDEN-3_1731057748648_1731057757885.jpg');"></div>
+        <div class="slider-image fade" style="background-image: url('https://static.tnn.in/thumb/msid-108676091,thumbsize-28884,width-1280,height-720,resizemode-75/108676091.jpg?quality=100');"></div>
+        <div class="slider-image fade" style="background-image: url('https://c.ndtvimg.com/2024-11/25ee88qo_pm-modi-_625x300_09_November_24.jpeg');"></div>
+    </div>
+    <div class="container">
+        <header>
+            <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
+            <h1>Decentralized Voting System</h1>
+            <div id="connectMetamask">
+                <p id="connectWalletMessage">Please connect your Metamask Wallet to Vote</p>
+                <button id="connectWallet">Connect Wallet</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="timerSection">
+                <p id="timerMessage"><span id="time">123</span> seconds left</p>
+            </section>
+
+            <section id="mainBoard">
+                <table id="candidateBoard">
+                    <thead>
+                        <tr><th>ID No.</th><th>Candidate</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>Candidate 0</td></tr>
+                        <tr><td>1</td><td>Candidate 1</td></tr>
+                        <tr><td>2</td><td>Candidate 2</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="voteForm">
+                <p>Please select the ID of the candidate you would like to vote for:</p>
+                <input type="number" id="voteInput" />
+                <button id="sendVote">Send Vote</button>
+            </section>
+
+            <section id="showResultContainer">
+                <button id="showResult">Show Result</button>
+            </section>
+
+            <section id="result">
+                <table id="resultBoard">
+                    <thead><tr><th>ID No.</th><th>Candidate</th><th>Votes</th></tr></thead>
+                    <tbody>
+                        <tr><td>0</td><td>Candidate 0</td><td>0</td></tr>
+                        <tr><td>1</td><td>Candidate 1</td><td>0</td></tr>
+                        <tr><td>2</td><td>Candidate 2</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
